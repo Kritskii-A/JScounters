@@ -16,7 +16,7 @@ counterFirst();
 function counterRandom() {
   const counterRand = document.querySelector(".counter-random");
   const interval = setInterval(function () {
-    counterRand.textContent = +counterRand.textContent + randomInteger();
+    addNum(counterRand);
   }, 5000); //timeout
 }
 
@@ -30,14 +30,18 @@ function counterClick() {
   const counterClicking = document.querySelector(".counter-click");
   const buttonAdd = document.querySelector("button");
   buttonAdd.onclick = () => {
-    counterClicking.textContent =
-      +counterClicking.textContent + randomInteger();
+    addNum(counterClicking);
   };
 }
 
 counterClick();
 
 // END
+
+// Fn add numbers
+const addNum = (selector) => {
+  selector.textContent = +selector.textContent + randomInteger();
+};
 
 // Random
 function randomInteger(min = 5, max = 30) {
