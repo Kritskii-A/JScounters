@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Count + (Don't use jquery)</title>
+    <title>
+      Count + (Don't use jquery) | Счетчики без использования JQuery
+    </title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -16,18 +18,19 @@
       <div class="container">
         <div class="navbar-header">
           <a href="https://kritskii-a.github.io/" class="navbar-brand"
-            >Counters (Don't use jquery)</a
+            >Counters (Don't use jquery) | Счетчики без использования JQuery<</a
           >
         </div>
       </div>
     </div>
     <div class="container">
       <div class="panel panel-success">
+        <div class="panel-heading">Increase counter value every second</div>
         <div class="panel-heading">
-          Increase counter value every second
+          Увеличение значения счетчика каждую секунду
         </div>
         <div class="panel-body">
-          <div class="counter" style="text-align: center; font-size: 40px;">
+          <div class="counter" style="text-align: center; font-size: 40px">
             154
           </div>
         </div>
@@ -36,10 +39,10 @@
         <div class="panel-heading">
           Increase the counter by a random value after 5 seconds.
         </div>
-        <div
-          class="counter-random"
-          style="text-align: center; font-size: 40px;"
-        >
+        <div class="panel-heading">
+          Увеличение значения счетчика на случайное значение каждые 5 секунд.
+        </div>
+        <div class="counter-random" style="text-align: center; font-size: 40px">
           154
         </div>
       </div>
@@ -47,11 +50,32 @@
         <div class="panel-heading">
           Increase the counter by a random value after clicking on the button
         </div>
-        <div style="text-align: center; font-size: 40px;">
-          <div class="counter-click">
-            154
-          </div>
+        <div class="panel-heading">
+          Увеличение значения счетчика на случайное значение при клике на
+          кнопку.
+        </div>
+        <div style="text-align: center; font-size: 40px">
+          <div class="counter-click">154</div>
           <button class="btn btn-success">Add</button>
+        </div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          If a field with the value "Another" is selected, then replace the form
+          with input.
+        </div>
+        <div class="panel-heading">
+          Если выбрать значение "Another", то форма будет заменена на поле ввода
+        </div>
+        <div class="panel-body">Choose another</div>
+        <div class="formKnown">
+          <select class="form-control" name="known" id="known">
+            <option value="">Select</option>
+            <option value="friend">Friend</option>
+            <option value="sister">Sister</option>
+            <option value="brother">Brother</option>
+            <option value="another">Another</option>
+          </select>
         </div>
       </div>
     </div>
